@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Conversor De Moneda</string>
+    <string name="Moneda_1">Ingrese el valor:</string>
+    <string name="Currency">Ej: 10.25</string>
+    <string name="btCalcular">Calcular</string>
+    <string name="Convertir">Convertir</string>
+    <string name="tvCurrency_2">Conversión</string>
+    <string-array name="Currency_spinner">
+        <item>COL</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>MXN</item>
+
+    </string-array>
+
+</resources>
