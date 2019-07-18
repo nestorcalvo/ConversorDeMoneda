@@ -1,13 +1,18 @@
 package com.nestorcalvo.conversordemoneda
 
+import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import java.math.RoundingMode
+import java.text.DecimalFormat
+
 
 class MainActivity : AppCompatActivity() {
 
 
 
+    @SuppressLint("DefaultLocale")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,13 +31,19 @@ class MainActivity : AppCompatActivity() {
                 Resultado = Valor1.toString()
             }
             else{
-                Resultado = (Valor1*(map_currency[Moneda1].toString().toDouble()/map_currency[Moneda2].toString().toDouble())).toString()
+                Resultado = roundOffDecimal((Valor1*(map_currency[Moneda1].toString().toDouble()/map_currency[Moneda2].toString().toDouble()))).toString()
+                //Resultado = java.lang.String.format("%.0f",Resultado)
             }
             tvResult.text = Resultado
 
-        }//Hola
+        }
 
 
+    }
+    fun roundOffDecimal(number: Double): Double? {
+        val df = DecimalFormat("#.##")
+        df.roundingMode = RoundingMode.CEILING
+        return df.format(number).toDouble()
     }
 }
 

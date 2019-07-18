@@ -12,6 +12,7 @@
         android:text="@string/app_name"
         android:gravity="center_horizontal"
         android:textSize="30sp"
+        android:textColor="@color/black"
 
     />
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
@@ -20,6 +21,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvCurrency1"
                 android:text="@string/Moneda_1"
+                android:textSize="20sp"
+                android:textColor="@color/black"
 
         />
         <EditText
@@ -28,6 +31,7 @@
                 android:inputType="number"
                 android:id="@+id/etCurrency1"
                 android:hint="@string/Currency"
+                android:textSize="20sp"
 
         />
 
@@ -43,7 +47,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/spCurrency_1"
                 android:entries="@array/Currency_spinner"
-                 >
+
+         >
 
 
         </Spinner>
@@ -57,7 +62,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/spCurrency_2"
-                android:entries="@array/Currency_spinner">
+                android:entries="@array/Currency_spinner"
+
+        >
 
 
         </Spinner>
@@ -69,6 +76,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvCurrency2"
                 android:text="@string/tvCurrency_2"
+                android:textSize="20sp"
+                android:textColor="@color/black"
 
         />
         <TextView
@@ -76,6 +85,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:id="@+id/tvResult"
+                android:textSize="20sp"
+                android:textColor="@color/black"
 
         />
 
