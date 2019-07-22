@@ -28,7 +28,7 @@
         <EditText
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:id="@+id/etCurrency1"
                 android:hint="@string/Currency"
                 android:textSize="20sp"
@@ -83,7 +83,7 @@
         <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:id="@+id/tvResult"
                 android:textSize="20sp"
                 android:textColor="@color/black"

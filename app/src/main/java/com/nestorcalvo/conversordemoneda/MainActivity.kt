@@ -1,15 +1,14 @@
 package com.nestorcalvo.conversordemoneda
 
 import android.annotation.SuppressLint
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.math.RoundingMode
 import java.text.DecimalFormat
 
 
 class MainActivity : AppCompatActivity() {
-
 
 
     @SuppressLint("DefaultLocale")
@@ -26,24 +25,26 @@ class MainActivity : AppCompatActivity() {
             var Valor1 = etCurrency1.text.toString().toDouble()
             var Moneda1 = spCurrency_1.selectedItem.toString()
             var Moneda2 = spCurrency_2.selectedItem.toString()
-            var Resultado = "Hola"
-            if (Moneda1 == Moneda2){
+            var Resultado: String
+            if (Moneda1 == Moneda2) {
                 Resultado = Valor1.toString()
+            } else {
+                Resultado =
+                    (roundOffDecimal(Valor1 * (map_currency[Moneda1].toString().toDouble() / map_currency[Moneda2].toString().toDouble()))).toString()
+
             }
-            else{
-                Resultado = roundOffDecimal((Valor1*(map_currency[Moneda1].toString().toDouble()/map_currency[Moneda2].toString().toDouble()))).toString()
-                //Resultado = java.lang.String.format("%.0f",Resultado)
-            }
-            tvResult.text = Resultado
+            tvResult.text = Resultado + " " + Moneda2
 
         }
 
 
     }
-    fun roundOffDecimal(number: Double): Double? {
+    fun roundOffDecimal(number: Double): Double?{
         val df = DecimalFormat("#.##")
         df.roundingMode = RoundingMode.CEILING
         return df.format(number).toDouble()
+
     }
+
 }
 
