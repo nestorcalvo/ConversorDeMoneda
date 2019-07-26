@@ -15,8 +15,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
+        //set icon
+        supportActionBar?.setDisplayShowHomeEnabled(true);
+        supportActionBar?.setLogo(R.mipmap.ic_launcher_round);
+        supportActionBar?.setDisplayUseLogoEnabled(true);
         var map_currency = mapOf("COL" to 0.00031, "USD" to 1, "EUR" to 1.23, "MXN" to 0.053)
 
 

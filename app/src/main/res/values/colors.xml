@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F99B5</color>
+    <color name="colorPrimaryDark">#309F5C</color>
+    <color name="colorAccent">#8A395828</color>
     <item name="black" type="color">#000000</item>
     <item name="navy" type="color">#000080</item>
     <item name="darkblue" type="color">#00008b</item>
@@ -104,7 +104,7 @@
     <item name="palegreen" type="color">#98fb98</item>
     <item name="powderblue" type="color">#b0e0e6</item>
     <item name="lightgray" type="color">#d3d3d3</item>
-    <item name="aquamarine" type="color">#7fffd4</item>
+    <item name="aquamarine" type="color">#7FFFD4</item>
     <item name="pink" type="color">#ffc0cb</item>
     <item name="paleturquoise" type="color">#afeeee</item>
     <item name="gainsboro" type="color">#dcdcdc</item>
