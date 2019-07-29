@@ -4,7 +4,7 @@
     <string name="Currency">Ej: 10.25</string>
     <string name="btCalcular">Calcular</string>
     <string name="Convertir">Convertir</string>
-    <string name="tvCurrency_2">Conversión:</string>
+    <string name="tvCurrency_2">Conversión: </string>
     <string-array name="Currency_spinner">
         <item>COL</item>
         <item>USD</item>
