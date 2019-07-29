@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 Resultado = Valor1.toString()
             } else {
                 Resultado =
-                    (roundOffDecimal(Valor1 * (map_currency[Moneda1].toString().toDouble() / map_currency[Moneda2].toString().toDouble()))).toString()
+                    (Valor1 * (map_currency[Moneda1].toString().toDouble() / map_currency[Moneda2].toString().toDouble())).toString()
 
             }
             tvResult.text = Resultado + " " + Moneda2
@@ -41,12 +41,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-    fun roundOffDecimal(number: Double): Double?{
-        val df = DecimalFormat("#.##")
-        df.roundingMode = RoundingMode.CEILING
-        return df.format(number).toDouble()
 
-    }
 
 }
 
